@@ -8,7 +8,7 @@ build:
   stage: build
   variables: 
     # Replace this with your site URL
-    PUBLIC_URL: https://purindev.gitlab.io/mindful/ 
+    PUBLIC_URL: https://t8595.gitlab.io/fe-webapp/
   script:
     - yarn install
     - yarn build
