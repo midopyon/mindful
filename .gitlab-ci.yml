@@ -4,8 +4,11 @@ stages:
   - deploy
 
 build:
-  image: node:14.15.3-buster-slim
+  image: node:latest
   stage: build
+  variables: 
+    # Replace this with your site URL
+    PUBLIC_URL: https://purindev.gitlab.io/mindful/ 
   script:
     - yarn install
     - yarn build
@@ -18,12 +21,9 @@ pages:
   stage: deploy
   variables:
     GIT_STRATEGY: none # Do not clone git repo
-    NODE_ENV: production
-    PUBLIC_URL: https://purindev.gitlab.io/mindful
   script:
     # Rename the CRA `build` folder to `public`
     - mv build public
-    - cp public/index.html public/404.html
   artifacts:
     paths:
       - public
