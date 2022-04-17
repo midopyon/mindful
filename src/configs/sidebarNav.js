@@ -3,37 +3,19 @@ const sidebarNav = [
         link: '/',
         section: 'home',
         icon: <i className='bx bx-home-alt'></i>,
-        text: 'Home'
+        text: 'home'
     },
     {
-        link: '/orders',
-        section: 'orders',
+        link: '/quizz',
+        section: 'quizz',
         icon: <i className='bx bx-receipt' ></i>,
-        text: 'Orders'
+        text: 'cuestionario'
     },
     {
-        link: '/products',
-        section: 'products',
+        link: '/recursos',
+        section: 'recursos',
         icon: <i className='bx bx-cube'></i>,
-        text: 'Products'
-    },
-    {
-        link: '/customers',
-        section: 'customers',
-        icon: <i className='bx bx-user'></i>,
-        text: 'Customers'
-    },
-    {
-        link: '/stats',
-        section: 'stats',
-        icon: <i className='bx bx-line-chart'></i>,
-        text: 'Stats'
-    },
-    {
-        link: '/settings',
-        section: 'settings',
-        icon: <i className='bx bx-cog'></i>,
-        text: 'Settings'
+        text: 'recursos'
     }
 ]
 

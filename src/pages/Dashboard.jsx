@@ -1,7 +1,7 @@
 import React from 'react'
 import { Bar } from 'react-chartjs-2'
 import Box from '../components/box/Box'
-import DashboardWrapper, { DashboardWrapperMain, DashboardWrapperRight } from '../components/dashboard-wrapper/DashboardWrapper'
+import DashboardWrapper, { DashboardWrapperMain } from '../components/dashboard-wrapper/DashboardWrapper'
 import SummaryBox, { SummaryBoxSpecial } from '../components/summary-box/SummaryBox'
 import { colors, data } from '../constants'
 import {
@@ -14,8 +14,6 @@ import {
     Tooltip,
     Legend
 } from 'chart.js'
-import OverallList from '../components/overall-list/OverallList'
-import RevenueList from '../components/revenue-list/RevenueList'
 
 ChartJS.register(
     CategoryScale,
@@ -55,16 +53,6 @@ const Dashboard = () => {
                     </div>
                 </div>
             </DashboardWrapperMain>
-            <DashboardWrapperRight>
-                <div className="title mb">Overall</div>
-                <div className="mb">
-                    <OverallList />
-                </div>
-                <div className="title mb">Revenue by channel</div>
-                <div className="mb">
-                    <RevenueList />
-                </div>
-            </DashboardWrapperRight>
         </DashboardWrapper>
     )
 }

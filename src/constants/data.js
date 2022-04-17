@@ -2,7 +2,7 @@ import images from "./images"
 
 const data = {
     user: {
-        name: 'Tuatta',
+        name: 'Perla',
         img: images.avt
     },
     summary: [
@@ -10,7 +10,7 @@ const data = {
             title: 'Sales',
             subtitle: 'Total sales today',
             value: '$1.000',
-            percent: 70
+            percent: 33
         },
         {
             title: 'Orders',

@@ -3,6 +3,7 @@
 .topnav {
     @include flex(center, space-between);
     margin-bottom: $spacing;
+    flex-direction: row-reverse;
 
     @include tablet {
         margin-bottom: $mobileSpacing;

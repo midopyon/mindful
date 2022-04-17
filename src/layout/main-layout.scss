@@ -1,7 +1,7 @@
 @use '../scss/abstracts/' as *;
 
 .main {
-    padding-left: $sideBarWidth;
+    padding-left: 384px;
     overflow-x: hidden;
 
     @include tablet {

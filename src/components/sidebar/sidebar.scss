@@ -5,7 +5,7 @@
     @include flex(stretch, flex-start);
     flex-direction: column;
     color: $txtColor;
-    width: $sideBarWidth;
+    width: 384px;
     background-color: $mainBg;
     height: 100vh;
     position: fixed;
@@ -31,9 +31,10 @@
         }
 
         img {
-            --size: 55px;
+            --size: 223px;
+            --size2: 64px;
             width: var(--size);
-            height: var(--size);
+            height: var(--size2);
         }
 
         .sidebar-close {
