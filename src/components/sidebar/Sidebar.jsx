@@ -9,8 +9,9 @@ const Sidebar = () => {
     const location = useLocation()
 
     useEffect(() => {
-        const curPath = window.location.pathname.split('/')[1]
-        const activeItem = sidebarNav.findIndex(item => item.section === curPath)
+        const curPath = window.location.href.split('#')[1];
+        console.log('here', window.location.href.split('#'));
+        const activeItem = sidebarNav.findIndex(item => item.link === curPath)
 
         setActiveIndex(curPath.length === 0 ? 0 : activeItem)
     }, [location])
