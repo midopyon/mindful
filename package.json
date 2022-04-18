@@ -1,6 +1,5 @@
 {
   "name": "mindful",
-  "homepage": "https://t8595.gitlab.io/fe-webapp/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
