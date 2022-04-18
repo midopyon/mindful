@@ -10,10 +10,10 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<MainLayout />}>
+                <Route exact path="/" element={<MainLayout />}>
                     <Route index element={<Dashboard />} />
-                    <Route path="quizz" element={<SurveyPage />} />
-                    <Route path="recursos" element={<Blank />} />
+                    <Route path="/quizz" element={<SurveyPage />} />
+                    <Route path="/recursos" element={<Blank />} />
                 </Route>
             </Routes>
         </BrowserRouter>
