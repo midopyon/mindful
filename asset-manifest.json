@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mindful/static/css/main.68bae96e.css",
-    "main.js": "/mindful/static/js/main.1313f6c5.js",
+    "main.js": "/mindful/static/js/main.2d9b5553.js",
     "static/media/boxicons.svg": "/mindful/static/media/boxicons.17f6cb4eef77f07f2caa.svg",
     "static/media/boxicons.eot": "/mindful/static/media/boxicons.dfc882ec9689f820c7c9.eot",
     "static/media/boxicons.woff": "/mindful/static/media/boxicons.1a7e2e2bf3a855e674d4.woff",
@@ -11,10 +11,10 @@
     "static/media/logo.svg": "/mindful/static/media/logo.391e23e8e2e614b97ee10879b6496b79.svg",
     "index.html": "/mindful/index.html",
     "main.68bae96e.css.map": "/mindful/static/css/main.68bae96e.css.map",
-    "main.1313f6c5.js.map": "/mindful/static/js/main.1313f6c5.js.map"
+    "main.2d9b5553.js.map": "/mindful/static/js/main.2d9b5553.js.map"
   },
   "entrypoints": [
     "static/css/main.68bae96e.css",
-    "static/js/main.1313f6c5.js"
+    "static/js/main.2d9b5553.js"
   ]
 }
