@@ -1,53 +1,65 @@
-@use '../../scss/abstracts/' as *;
+@use "../../scss/abstracts/" as *;
 
 .summary-box {
-    @include flex(stretch, flex-start);
+  @include flex(stretch, flex-start);
+  flex-direction: column;
 
-    &__chart {
-        width: 40%;
+  &__parent {
+    display: flex;
+    justify-content: space-around;
 
-        &__value {
-            margin-top: -30%;
-            font-weight: 700;
-        }
-    }
+  }
 
-    &__info {
-        width: 60%;
-        @include flex(flex-start, space-between);
-        flex-direction: column;
+  &__description {
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
 
-        &__title {
-            font-size: $fontSizeMedium;
-            font-weight: 700;
-            line-height: 1.2;
-
-            span {
-                font-size: 13px;
-                font-weight: 400;
-            }
-        }
-
-        &__value {
-            font-weight: 700;
-            font-size: $fontSizeLarge;
-            color: $black;
-        }
-    }
-}
-
-.summary-box-special {
-    @include flex(center, space-between);
+  &__chart {
+    width: 30%;
     flex-direction: column;
-    height: 100%;
+
+    &__value {
+      margin-top: -25%;
+      font-weight: 700;
+    }
+  }
+
+  &__text {
+    font-size: $fontSizeNormal;
+    font-weight: 300;
+  }
+
+  &__readmore {
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    margin-top: 10px;
+    color: $green;
+  }
+
+  &__info {
+    @include flex(flex-start, space-between);
+    flex-direction: column;
 
     &__title {
-        font-weight: 700;
-        font-size: $fontSizeMedium;
+      font-size: $fontSizeMedium;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 19px;
+
+      span {
+        font-size: 13px;
+        font-weight: 400;
+      }
     }
 
     &__value {
-        font-size: $fontSizeLarge;
-        font-weight: 700;
+      font-weight: 700;
+      font-size: $fontSizeLarge;
+      color: $black;
     }
+  }
 }

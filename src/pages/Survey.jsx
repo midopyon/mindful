@@ -8,7 +8,7 @@ StylesManager.applyTheme("modern");
 
 function sendDataToServer(survey) {
   //send Ajax request to your web server
-  alert("The results are: " + JSON.stringify(survey.data));
+  // alert("The results are: " + JSON.stringify(survey.data));
 }
 
 const SurveyPage = () => {
